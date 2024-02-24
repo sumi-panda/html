@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+         .required::after{
+                content:"*";
+                color: rgb(244, 28, 28);
+                margin:"0";}
+        body{
+            h3{
+                border:1px;
+                background-color:rgb(161, 161, 209);
+            }
+            h4{
+                color:red;
+            }
+            u,h5,h2{
+                color: rgb(110, 110, 201);
+            }
+            span{color: rgb(161, 161, 209);}
+            .col{color: rgba(32, 102, 32, 0.977);
+            }
+            .col2{color: blue;}
+        }
+     </style>
+</head>
+<body>
+    <form name="form">
+    <h3>Individual Registration</h3>
+    <h4>*mandatory </h4>
+    <h3>GARBAGE/JUNK VALUES IN PROFILE MAY LEAD TO DEACTIMATION<br>
+    please use a valid E-Mail ID and mobile number in registration</h3>
+<table>
+    <tr>
+        <td class="required">
+            User Id
+        </td>
+        <td>
+        <input type="text" name="uname"><u>Check Availability</u>
+        </td>
+    </tr>
+    <tr>
+        <td class="required">
+            Password
+        </td>
+        <td>
+           Between 3 to 10 Character,Only Letter,number and unders core are allowed.<br><input type="password" name="pw">
+        </td>
+    </tr>
+    <tr>
+        <td class="required">
+            Confirm Password
+        </td>
+        <td>
+            Min 8 Character & Max 15 Character,Password must contain at least one small & one capital alphabet and numeric digit.<br><input type="password" name="cpw">
+        </td>
+    </tr>
+    <tr>
+        <td>
+        <h5> If you forget your password,we will identify you with this information</h5>
+        </td> 
+    </tr>
+    <tr>
+        <td class="required">
+            Security Question
+        </td>
+        <td>
+        <select name="questions">
+            <option value="" selected>-select questions-</option>
+            <option value=petname>"What is your pet name?"</option>
+            <option value=friend>"What is your friend name?"</option>
+        </select> </td>
+    </tr>
+    <tr>
+        <td class="required">
+            Security Answer
+        </td>
+        <td>
+            <input type="text" name="answer">
+        </td>
+    </tr>
+    <tr>
+        <td class="required">
+            Preferred Language
+        </td>
+        <td>
+            <select name="languages">
+                <option value=""selected>-select Language-</option>
+                <option value=language>"ENGLISH"</option>
+                <option value=language>"HINDI"</option>
+            </select>
+        </td>
+    </tr>
+    </table>
+          <h3>Personal Details</h3>
+    <table>
+    <tr>
+        <td class="required" width="270">
+            First Name
+        </td>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="name">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Middle Name
+        </td>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="mn">
+        </td>
+    </tr>
+    <tr>
+        <td class="required">
+            Last Name
+        </td>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="ln">
+        </td>
+        <tr>
+            <td class="required">
+                Gender
+            </td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="gender" value="Male">Male
+                <input type="radio" name="gender" value="Female">Female
+            </td>
+        </tr>
+        <tr>
+            <td class="required">
+                Maritial Status
+            </td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="Married" value="Married">Married
+                <input type="radio" name="Married" value="Unmarried">Unmarried
+             </td>
+        </tr>
+        <tr>
+            <td class="required">
+                Date Of Birth
+            </td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="date" name="dob">
+            </td>
+        </tr>
+        <tr>
+            <td class="required">
+                Occupation
+            </td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <select name="occupation">
+                    <option value=""selected>-Public-</option>
+                    <option value=occupation>Service</option>
+                    <option value=occupation>Bussiness</option>
+                    <option value=occupation>Others</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Adhar Card No
+            </td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="number" name="adhar">(Optional)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Pan Card No
+            </td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="number" name="pan">(Optional)
+            </td>
+        </tr>
+        <tr>
+            <td class="required">
+                Email
+            </td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="email" name="email">
+            </td>
+        </tr>
+        <tr>
+            <td class="required">
+                Mobile
+            </td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                +91<input type="number" name="number">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Nationality
+            </td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <select name="nationality">
+                    <option value="" selected>-Choose Option-</option>
+                    <option value=india>Indian</option>
+                </select> </td>
+        </tr>
+        </table>
+                <h3>Residential Address</h3>
+        <table>
+        <tr>
+            <td class="required" width="270">
+                Flat/Door/Block No
+            </td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="number" name="flat">
+            </td>
+        </tr> 
+        <tr>
+            <td>
+                Street/Lane
+            </td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <textarea name="address"></textarea>(Optional)
+            </td>
+        </tr> 
+        <tr>
+        <td>
+            Area/Locality
+        </td>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="area">
+        </td>
+        </tr>
+        <tr>
+            <td class="required">
+                Country
+            </td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <select name="country">
+                        <option value="" selected>India</option>
+                    </select> </td>
+        </tr>
+        <tr>
+            <td class="required">
+                Pincode
+            </td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="number" name="pin">
+            </td>
+        </tr>
+        <tr>
+            <td class="required">
+                State
+            </td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <select name="State">
+                    <option value=""selected>Delhi</option>
+            </td>
+        </tr>
+        <tr>
+            <td class="required">
+                City/Town
+            </td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <select name="city">
+                    <option value="" selected>Central Delhi</option>
+                    <option value=city>Siri</option>
+                    <option value=city>New delhi</option>
+                </select>
+            </td>
+            <tr>
+                <td class="required">
+                    Post Office
+                </td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <select name="postoffice">
+                    <option value="" selected>Pahar Ganj S.O</option>
+                    <option value=post>Rail Bhawan</option>
+                    <option value=post>Rajender Nagar</option>
+                    </select>
+              </td>
+            </tr>
+            <tr>
+                <td>
+                    Phone
+                </td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="number" name="phone">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h5>Copy Residence to office Address</h5>
+                </td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="copy" value="copy">Yes
+                    <input type="radio" name="copy" value="copy">No
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <h1>YAD9K</h1>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Type code Shown
+                </td>
+                <td>
+                   <span>refresh</span><br>
+                    <input type="text" name="capcha"><br>
+                    Captcha letters are case sensitive and to be entered in upper case only
+                </td>
+            </tr>
+            </table>
+                <h3><span class="col">Subscription to IRCTC New letters/Promotions/IRCTC SBI Card through email/SMS</span></h3>
+            <table>
+            <tr>
+                <td>
+                    <h5>IPCTC Newsletters</h5>
+                </td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="ir" value="ir">Yes
+                    <input type="radio" name="ir" value="ir">No
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h5>Commercial Promotions</h5>
+                </td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="cp" value="cp">Yes
+                    <input type="radio" name="cp" value="cp">No
+                </td>
+            </tr>
+                <tr>
+                <td>
+                    <h5>Please Inform me about IRCTC SBI Card through phone*</h5>
+                </td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="sb" value="sb">Yes
+                    <input type="radio" name="sb" value="sb">No
+                </td>
+            </tr>
+        </table>
+        <center><h3><span class="col2">Submit Registration from>>>
+        </span></h3></center>
+        </form>
+    </body>
+</html>
